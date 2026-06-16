@@ -1,0 +1,23 @@
+{
+    "name": "componenta/uuid",
+    "description": "UUID value objects and generators for Componenta",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "ramsey/uuid": "^4.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Componenta\\Uuid\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "componenta": {
+            "config-providers": [
+                "Componenta\\Uuid\\ConfigProvider"
+            ]
+        }
+    }
+}
